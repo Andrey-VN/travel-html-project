@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel project</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header none">
@@ -62,13 +64,24 @@
                         <a href="" class="destinations__btn btn">Exsplore Now</a>
                     </div>
                     <div class="destinations__slider">
-                        <img src="./img//slider/01.png" alt="Slider item" class="destinations__slider-item">
-                        <img src="./img//slider/02.png" alt="Slider item" class="destinations__slider-item destinations__slider-item--active">
-                        <img src="./img//slider/03.png" alt="Slider item" class="destinations__slider-item">
+                        <div class="owl-carousel">
+                            <img src="./img//slider/01.png" alt="Slider item" class="destinations__slider-item">
+                            <img src="./img//slider/02.png" alt="Slider item" class="destinations__slider-item">
+                            <img src="./img//slider/03.png" alt="Slider item" class="destinations__slider-item">
+                        </div>
+                        <button class="destinations__slider-btn destinations__slider-btn--prev">
+                            <img src="./img/slider/arrow-left.svg" alt="Left">
+                        </button>
+                        <button class="destinations__slider-btn destinations__slider-btn--next">
+                            <img src="./img/slider/arrow-right.svg" alt="Left">
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-  </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js" integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/main.js"></script>  
+</body>
 </html>
