@@ -73,11 +73,36 @@ body {
 }
 
 .header__top {
+  position: relative;
   margin-bottom: 86px;
+  z-index: 2;
+}
+
+.header__row {
+  display: flex;
 }
 
 .header__content {
-  max-width: 592px;
+    max-width: 592px;
+  z-index: 1;
+  
+}
+
+.header__img {
+  position: relative;
+  width: 894px;
+}
+
+.header__img img {
+  position: absolute;
+  top: -200px;
+  right: -87px;
+
+  /* особенность резет, надо ставить в картинках такое свойство */
+  max-width: unset;
+
+  width: 894px;
+  height: 940px;
 }
 
 .header a {
@@ -163,6 +188,8 @@ body {
   font-size: 15px;
   font-weight: 500;
 
+  cursor: pointer;
+
   transition-property: background-color;
   transition-duration: 0.6s;
 }
@@ -172,5 +199,44 @@ body {
 }
 
 .btn:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+/* Header content */
+
+.header__badge {
+  margin-bottom: 7px;
+  padding: 11px 30px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+
+  display: inline-block;
+
+  cursor: pointer;
+}
+.header__title {
+  margin-bottom: 30px;
+  font-size: 55px;
+}
+.header__text {
+  margin-bottom: 68px;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  color: var(--white);
+  opacity: 0.5;
+}
+.header__btn {
+  display: inline-block;
+  padding: 27px 47px;
+
+  font-size: 25px;
+  font-weight: 600;
+
+  border-radius: 27px;
 }
