@@ -1,0 +1,6 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Marcellus&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
