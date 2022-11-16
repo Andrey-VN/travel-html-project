@@ -10,14 +10,14 @@ $(document).ready(function(){
     });
   });
 
-
-// Go to the next item
-$('.destinations__slider-btn--prev').click(function() {
-    owl.trigger('next.owl.carousel');
-})
 // Go to the previous item
-$('.destinations__slider-btn--next').click(function() {
+$('.destinations__slider-btn--prev').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [300]);
+    owl.trigger('prev.owl.carousel');
+})
+
+// Go to the next item
+$('.destinations__slider-btn--next').click(function() {
+    owl.trigger('next.owl.carousel');
 })

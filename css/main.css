@@ -4,7 +4,7 @@
 :root {
   --general-background-color: #f6f6f6;
   --general-color: #0f1f1c;
-  --secondary: rgba(15, 31, 28, 0.5);
+  --secondary: hsla(169, 35%, 9%, 0.5);
 
   --container-width: 1270px;
   --container-padding: 15px;
@@ -140,6 +140,10 @@ body {
   font-weight: 700;
 }
 
+.logo--footer {
+  color: #FF7C4E;
+}
+
 .logo__link {
   color: inherit;
 }
@@ -241,102 +245,312 @@ body {
   border-radius: 27px;
 }
 
-
 /* Destinations */
 
 .destinations {
-    padding: 96px 0 100px;
-    overflow-x: hidden;
+  padding: 96px 0 100px;
+  overflow-x: hidden;
 }
 .destinations__row {
-    display: flex;
-    column-gap: 50px;
+  display: flex;
+  column-gap: 50px;
 }
 .destinations__content {
-    max-width: 456px;
+  max-width: 456px;
 }
 
 .destinations__slider {
-    position: relative;
+  position: relative;
 
-    width: 1110px;
-    flex-shrink: 0;
+  width: 1110px;
+  height: 456px;
+  flex-shrink: 0;
 }
 
 /* Destinations content*/
 
 .destinations__title {
-    margin-bottom: 15px;
-    font-size: 55px;
-    font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 600;
 }
+
 .destinations__title span {
-    font-size: 30px;
+  font-size: 30px;
 }
+
 .destinations__text {
-    margin-bottom: 60px;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--secondary);
+  margin-bottom: 60px;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--secondary);
 }
+
 .destinations__btn {
-    display: inline-block;
+  display: inline-block;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    padding: 25px 44px;
-    border-radius: 27px;
+  padding: 25px 44px;
+  border-radius: 27px;
 }
-
 
 /* Destinations slider*/
 
-
-.destinations__slider-item {    
-    width: 335px;
-    height: 402px;
-    object-fit: cover;
-    border-radius: 35px;
-    transition: 0.2s ease-in;
+.destinations__slider-item {
+  width: 335px;
+  height: 402px;
+  object-fit: cover;
+  border-radius: 35px;
+  transition: 0.2s ease-in;
 }
-
-
 
 .destinations__slider .center .destinations__slider-item {
-    width: 380px;
-    height: 456px;
+  width: 380px;
+  height: 456px;
 }
 
-.destinations__slider  .owl-item:not(.center) .destinations__slider-item {
-    margin-top: 27px;
+.destinations__slider .owl-item:not(.center) .destinations__slider-item {
+  margin-top: 27px;
 }
 
 .destinations__slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 
-    display: block;
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
 
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 
-    background: var(--color-btn);
+  background: var(--color-btn);
 }
+
 .destinations__slider-btn--prev {
-    left: -27px;
+  left: -27px;
 
-    padding-left: 26px;
-    justify-content: flex-start;
+  padding-left: 26px;
+  justify-content: flex-start;
 }
-.destinations__slider-btn--next {
-    right: -27px;
 
-    padding-right: 26px;
-    justify-content: flex-end;
+.destinations__slider-btn--next {
+  right: -27px;
+
+  padding-right: 26px;
+  justify-content: flex-end;
+}
+
+/* Customers */
+
+.customers {
+  padding: 100px 0 133px;
+}
+.customers__row {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 68px;
+}
+.customers__img {
+  max-width: 478px;
+}
+
+.customers__img img {
+  border-radius: 60px;
+}
+
+.customers__content {
+  max-width: 565px;
+}
+
+.customers__title {
+  font-size: 45px;
+  font-weight: 500;
+
+  margin-bottom: 35px;
+}
+
+/* Review */
+
+.review {
+  max-width: 491px;
+}
+
+.review__client {
+  display: flex;
+  column-gap: 33px;
+  align-items: center;
+
+  margin-bottom: 60px;
+}
+
+.review__client-avatar {
+  width: 134px;
+  height: 134px;
+
+  border-radius: 50%;
+  background: var(--color-btn);
+
+  overflow: hidden;
+}
+
+.review__client-desc-name {
+  font-size: 33px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.review__client-desc-country {
+  font-size: 25px;
+  font-weight: 400;
+
+  color: var(--secondary);
+}
+.review__text {
+  font-size: 22px;
+  font-weight: 500;
+
+  color: var(--secondary);
+
+  margin-bottom: 30px;
+}
+
+/* Cta */
+
+.cta {
+  padding: 100px 0;
+}
+
+.cta__plate {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 580px;
+  padding: 40px 15px;
+
+  background-color: var(--white);
+  border-radius: 60px;
+
+  text-align: center;
+}
+
+.cta__plate::before,
+.cta__plate::after {
+  content: "";
+  position: absolute;
+
+  width: 63px;
+  height: 83px;
+}
+
+.cta__plate::before {
+  left: 74px;
+  bottom: 56px;
+
+  background-image: url(./../img/cta/cta-el-02.svg);
+}
+
+.cta__plate::after {
+  right: 80px;
+  top: 74px;
+
+  background-image: url(./../img/cta/cta-el-01.svg);
+}
+
+.cta__title {
+  margin-bottom: 45px;
+  max-width: 519px;
+
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.cta__text {
+  margin-bottom: 60px;
+
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+.cta__button {
+  padding: 25px 54px;
+  border-radius: 27px;
+}
+
+/* Subscribe */
+
+.subscribe {
+  padding: 35px 0 50px;
+}
+
+.subscribe__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.subscribe__title {
+  margin-bottom: 50px;
+  max-width: 494px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.subscribe-form {
+  padding: 12px 15px 12px 46px;
+  border-radius: 35px;
+  background-color: var(--white);
+
+  display: flex;
+  column-gap: 20px;
+
+}
+
+.subscribe-form__input {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.subscribe-form__input::placeholder{
+  color: var(--secondary);
+}
+
+.subscribe-form__btn {
+  padding: 34px 87px;
+  border-radius: 35px;
+
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+/* Footer */
+
+.footer {
+  padding: 56px 0 74px;
+}
+
+.footer .nav__list a, 
+.footer .nav__login-link:not(.nav__login-btn) {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.footer .nav__list-link--active::after {
+  display: none;
+}
+
+.footer .nav__list-link:hover::after {
+  display: none;
 }
